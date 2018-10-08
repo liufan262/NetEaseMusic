@@ -26,5 +26,13 @@ $(function () {
         audio.play()
         $('.disc-container').addClass('playing')
     }
-
+    $('.icon-pause').on('click', function () {
+        audio.pause()
+        $('.disc-container').removeClass('playing')
+    })
+    $('.icon-play').on('click', function () {
+        audio.play()
+        $('.disc-container').addClass('playing')
+    })
+    
 });
